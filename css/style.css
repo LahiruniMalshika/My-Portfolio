@@ -466,7 +466,7 @@ pre {
       max-width: 1140px; } }
 
 .container-fluid {
-  width: 100%;
+  width: 50%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -478,8 +478,8 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: 15px;
+  margin-left: 15px; }
 
 .no-gutters {
   margin-right: 0;
@@ -8802,7 +8802,7 @@ h1, h2, h3, h4, h5,
     .ftco-about ul.about-info li span {
       width: calc(100% - 130px);
       font-weight: 600;
-      color: #b1b493; }
+      color: #4e555b; }
       .ftco-about ul.about-info li span:first-child {
         font-weight: 600;
         color: #000000;
@@ -9733,6 +9733,132 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+
+.class1{
+  color:blue;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 150px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px; 
+  height: 500px; /* Fixed height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position:relative;
+  overflow-y: auto;
+  color: black;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  position: absolute;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* General styles for the section */
+#skills-section {
+  padding: 4em 0;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+#skills-section .heading-section h1 {
+  font-size: 3rem;
+}
+
+#skills-section .heading-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#skills-section .heading-section p {
+  font-size: 1rem;
+}
+
+/* Styles for the skill boxes */
+.services-1 {
+  background-color: white; /* Light gray background */
+  color: black; /* Black text */
+  padding: 2rem; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+  width: 150px; /* Fixed width for consistency */
+  margin: 1rem; /* Margin between skill boxes */
+  margin-left: 50px;
+}
+
+.services-1:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.icon-wrapper {
+  background-color: whitesmoke; /* Dark background for the icon */
+  width: 80px; /* Fixed size for the icon background */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Circle shape */
+  margin-bottom: 1rem; /* Space between icon and text */
+}
+
+.services-1 img {
+  width: 50px;
+  height: 50px;
+}
+
+.services-1 h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Flexbox for responsive layout */
+.skill-container {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping of items */
+  justify-content: center; /* Center the skill items */
+}
+
+
 
 @-webkit-keyframes loader-rotate {
   100% {
