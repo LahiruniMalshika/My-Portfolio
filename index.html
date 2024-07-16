@@ -17,13 +17,56 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+	<script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close the modal when clicking outside of the modal content
+window.onclick = function(event) {
+    var modals = document.getElementsByClassName('modal');
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gmnuYL6CE41ASBjn8"); // Enclose the public key in quotes
+      })();
+    </script>
+
+
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	
 	
 	<nav class=" #navbar-section navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Lahiruni Malshika<span>.</span></a>
+			<a class="navbar-brand" href="index.html">Lahiruni Malshika</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
@@ -33,8 +76,8 @@
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#service-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
@@ -47,17 +90,22 @@
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
+						<div class="one-third order-md-last img" style="background-image:url(images/lahi_official__4.png);">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Hello! This is Lahiruni</span>
 								<h1 class="mb-4 mt-3">Software <span>Developer</span></h1>
-								<p> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<div class="btn-container">
+									<p> <a href="#contact-section" class="btn btn-primary btn-outline-primary">Hire Me</a></p>
+								</div>
+								  
+
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -66,15 +114,15 @@
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
+						<div class="one-third order-md-last img" style="background-image:url(images/lahi_official\ 1.jpg);">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
 						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">I Develop &amp; Build Brands</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Lahiruni</span> This is my favorite work.</h1>
-								<p> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<h1 class="mb-4 mt-3">Hi, I am  <span>from Sri Lanka</span></h1>
+								<p> <a href="#contact-section" class="btn btn-primary btn-outline-primary">Hire Me</a></p>
 							</div>
 						</div>
 					</div>
@@ -153,7 +201,7 @@
 								<p>I am a 3rd year undergraduate of Faculty of Information Technology , University of Moratuwa</p>
 
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Name:</span> <span>Lahiruni Malshika Amarasena</span></li>
+									<li class="d-flex"><span>Name:</span> <span class="class1">Lahiruni Malshika Amarasena</span></li>
 									<li class="d-flex"><span>Date of birth:</span> <span>June 14, 1999</span></li>
 									<li class="d-flex"><span>Address:</span> <span>Matara, Southern Province , Sri Lanka.</span></li>
 									<li class="d-flex"><span>Zip code:</span> <span>81700</span></li>
@@ -183,11 +231,15 @@
 									</div>
 									<div class="interest-wrap d-flex align-items-center">
 										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-listening"></span>
+											<span class="fa flaticon-listening"></span>
 										</div>
 										<div class="text">Dancing</div>
 									</div>
 								</div>
+							</div>
+							<div class="cv ">
+								<p><a href="lahiruniCV.pdf" download="lahiruniCV.pdf" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+
 							</div>
 						</div>
 					</div>
@@ -196,191 +248,177 @@
 		</div>
 	</section>
 	
-	<!-- <section class="ftco-section bg-light" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Skills</span>
-					<h2 class="mb-4">My Skills</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row progress-circle mb-5">
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
-
-						<div class="progress mx-auto" data-value='95'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
-							</div>
-						</div>
-
-						<div class="row text-center mt-4">
-							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-							</div>
-							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
-
-						<div class="progress mx-auto" data-value='98'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">98<sup class="small">%</sup></div>
-							</div>
-						</div>
-
-						<div class="row text-center mt-4">
-							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-							</div>
-							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">jQuery</h2>
-
-						<div class="progress mx-auto" data-value='68'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
-							</div>
-						</div>
-
-						<div class="row text-center mt-4">
-							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-							</div>
-							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="ftco-section" id="services-section">
+		<section class="service-section ftco-section" id="service-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
 					<span class="subheading">I am great at</span>
-					<h2 class="mb-4">My Skills</h2>
+					<h2 class="mb-4">My Services</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-3d-design"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<!-- Modal Structure -->
-
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-app-development"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Application</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
+				  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+					<div class="icon shadow d-flex align-items-center justify-content-center">
+					  <span class="flaticon-web-programming"></span>
+					</div>
+					<div class="media-body">
+					  <h3 class="heading mb-3">Web Development</h3>
+					  <p>A small river named Duden flows by their place and supplies.</p>
+					</div>
+				  </div>
 				</div>
 				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Development</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
+				  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+					<div class="icon shadow d-flex align-items-center justify-content-center">
+					  <span class="fas flaticon-app-development"></span>
+					</div>
+					<div class="media-body">
+					  <h3 class="heading mb-3">Mobile App Development</h3>
+					  <p>A small river named Duden flows by their place and supplies.</p>
+					</div>
+				  </div>
 				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Banner Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
+				<!-- Add more cards as needed -->
+			  </div>
+			  
 
 			<div class="row">
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-computer"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Branding</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Icon Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Graphic Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">SEO</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
+							</div>
 		</div>
 	</section>
+
+	<section class="ftco-section" id="skills-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <h1 class="mb-4">My Skills</h1>
+        <p>
+          With a diverse set of skills, I am dedicated to delivering
+          high-quality results in every project I undertake. Below is a
+          snapshot of my proficiency in various tools and technologies.
+        </p>
+      </div>
+    </div>
+    <div class="skill-container">
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">React</h3>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg/640px-Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg.png" alt="Next JS" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">Next JS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">JavaScript</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">TypeScript</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">HTML</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">CSS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/640px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">Tailwind CSS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/640px-NestJS.svg.png" alt="Nest JS" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">Nest JS</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="MySQL" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">MySQL</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">C</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <div class="icon-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" />
+          </div>
+          <div class="desc">
+            <h3 class="mb-3">Java</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 	<section class="ftco-hireme">
 		<div class="container">
@@ -388,56 +426,68 @@
 				<div class="col-md-8 col-lg-8 d-flex align-items-center">
 					<div class="w-100 py-4">
 						<h2>Have a project on your mind.</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
-						<p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact me</a></p>
+						<p>Contact me, I will do your project in my best.</p>
+						<p class="mb-0"><a href="#contact-section" class="btn btn-white py-3 px-4">Contact me</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-lg-4 d-flex align-items-end">
-					<img src="images/author.png" class="img-fluid" alt="">
+					<img src="images/lahi_official_2-removebg-preview__2_-removebg-preview.png" class="img-fluid" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-project" id="projects-section">
+	<section class="ftco-section ftco-project" id="project-section">
 		<div class="container-fluid px-md-4">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Accomplishments</span>
-					<h2 class="mb-4">My Projects</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
+		  <div class="row justify-content-center pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+			  <span class="subheading">Accomplishments</span>
+			  <h2 class="mb-4">My Projects</h2>
+			  <p>Below is my projects which I have been done</p>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					
+		  </div>
+		  <div class="row">
+			<div class="col-md-6" id="p1">
+			  <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/sp2.png);" onclick="openModal('modal1')">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="" onclick="event.preventDefault(); openModal('modal1');">Photography Focused Responsive web application</a></h3>
+				  <span class="p1-theme">Web Design</span>
 				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				
-				
-				
+			  </div>
 			</div>
+			<div class="col-md-6">
+			  <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);" onclick="openModal('modal2')">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#" onclick="event.preventDefault(); openModal('modal2');">Multi-Colour Wall Art Machine</a></h3>
+				  <span>Hardware Project</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-	</section>
+	  </section>
+	  
+	  <!-- Modals -->
+	  <div id="modal1" class="modal">
+		<div class="modal-content">
+		  <span class="close" onclick="closeModal('modal1')">&times;</span>
+		  <h6>Photography Focused Responsive Web Application</h6>
+		  <p>Welcome to our dynamic platform, a haven where photographers can flourish and connect with potential clients. Here, photographers can effortlessly upload albums, opting for private or public visibility to best suit their needs. They can also market their services through personalized packages, catering to a variety of client requirements. With the ability to manage appointments directly on their profiles, our platform ensures a seamless booking experience. For our users, the journey to discover exceptional talent is just a click away. Explore an extensive collection of portfolios to find your ideal photographer. Book with confidence, knowing you can see real-time availability and secure your session directly through the photographer’s profile. We stand firm in our commitment to inclusivity, welcoming photographers irrespective of their financial status.</p>
+		</div>
+	  </div>
+	  
+	  <div id="modal2" class="modal">
+		<div class="modal-content">
+		  <span class="close" onclick="closeModal('modal2')">&times;</span>
+		  <h6>Multi-Colour Wall Art Machine</h6>
+		  <p>Details about the project...</p>
+		</div>
+	  </div>
+	  
 
-	<section class="ftco-section testimony-section bg-primary">
+	<!-- <section class="ftco-section testimony-section bg-primary">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
@@ -528,7 +578,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<section class="ftco-section bg-light" id="blog-section">
@@ -564,7 +614,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+	<section class="contact-section ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-7 heading-section text-center ftco-animate">
@@ -614,12 +664,12 @@
 								<span class="fa fa-phone"></span>
 							</div>
 							<div class="text">
-								<p><span>Phone:</span> <a href="tel://1234567920">+71 242 8170</a></p>
+								<p><span>Phone:</span> <a href="tel://1234567920">+9471 242 8170</a></p>
 							</div>
 						</div>
 						<div class="dbox w-100 d-flex">
 							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-paper-plane"></span>
+								<span class="fa fa-envelope"></span>
 							</div>
 							<div class="text">
 								<p><span>Email:</span> <a href="mailto:lahimalshi@gmail.com">lahimalshi@gmail.com</a></p>
@@ -627,7 +677,7 @@
 						</div>
 						<div class="dbox w-100 d-flex">
 							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-map-marker"></span>
+								<span class="fa fa-linkedin"></span>
 							</div>
 							<div class="text">
 								<p><span>LinkedIn:</span><a href="https://www.linkedin.com/in/lahiruni-malshika-234242222/">www.linkedin.com</a></p>
@@ -636,14 +686,13 @@
 						
 						<div class="dbox w-100 d-flex">
 							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-computer"></span>
+								<span class="fa fa-github"></span>
 							</div>
 							<div class="text">
 								<p><span>GitHub</span> <a href="https://github.com/LahiruniMalshika">www.github.com</a></p>
 							</div>
 						</div>
 					</div>
-					<!-- <div id="map" class="map"></div> -->
 				</div>
 			</div>
 		</div>
@@ -656,7 +705,7 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Lets talk about</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<p>3rd year IT undergraduate from University of Moratuwa, Sri Lanka. I'm Passionate about Information Technology and innovations.</p>
 						<p><a href="#" class="btn btn-primary">Learn more</a></p>
 					</div>
 				</div>
@@ -665,10 +714,10 @@
 						<h2 class="ftco-heading-2">Links</h2>
 						<ul class="list-unstyled">
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+							<li><a href="#about-section"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+							<li><a href="#service-section"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
+							<li><a href="#project-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
+							<li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -676,41 +725,26 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Business Strategy</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Data Analysis</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Graphic Design</a></li>
+							<li><a href="service-section"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
+							<li><a href="service-section"><span class="fa fa-chevron-right mr-2"></span>Mobile App Development </a></li>
+							<li><a href="service-section"><span class="fa fa-chevron-right mr-2"></span>IT Consultant</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-							</ul>
-						</div>
+						
 						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+							<li class="ftco-animate"> <a href="tel://1234567920"><span class="fa fa-phone"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-envelope"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/lahiruni-malshika-234242222/"><span class="fa fa-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/LahiruniMalshika"><span class="fa fa-github"></span></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
-				</div>
-			</div>
+			
 		</footer>
 		
 		
@@ -734,6 +768,40 @@
 		<script src="js/google-map.js"></script>
 		
 		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			document
+			  .getElementById("contact-form")
+			  .addEventListener("submit", function (event) {
+				event.preventDefault();
+				formData = {
+				  from_name: document.getElementById("name1").value,
+	  
+				  subject: document.getElementById("subject1").value,
+				  message: document.getElementById("message1").value,
+				};
+	  
+				// Send the email using EmailJS
+				emailjs.send("service_fb0tuew", "template_0xeaiau", formData).then(
+				  function (response) {
+					console.log("SUCCESS!", response.status, response.text);
+					Toastify({
+					  text: "Message sent successfully!",
+					  backgroundColor: "linear-gradient(to right, #ffc107, #96c93d)",
+					  className: "success",
+					}).showToast();
+				  },
+				  function (error) {
+					console.log("FAILED...", error);
+					Toastify({
+					  text: "Failed to send the message. Please try again.",
+					  backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
+					  className: "error",
+					}).showToast();
+				  }
+				);
+			  });
+	      </script>
 		
 	</body>
 	</html>
