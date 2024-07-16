@@ -9149,7 +9149,8 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden; 
+}
 
 .bg-primary {
   background: #b1b493 !important; }
@@ -9382,13 +9383,17 @@ textarea.form-control {
   height: 300px; }
 
 .blog-entry {
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; }
   @media (min-width: 768px) {
     .blog-entry {
       margin-bottom: 30px; } }
   @media (max-width: 767.98px) {
     .blog-entry {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+     } 
+    }
   .blog-entry .text {
     width: 100%;
     margin: 0 auto; }
@@ -9858,7 +9863,10 @@ textarea.form-control {
   justify-content: center; /* Center the skill items */
 }
 
-
+.cv{
+margin-top: 20px;
+margin-left: 12px;
+}
 
 @-webkit-keyframes loader-rotate {
   100% {

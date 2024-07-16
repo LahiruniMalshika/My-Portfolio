@@ -17,13 +17,56 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+	<script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close the modal when clicking outside of the modal content
+window.onclick = function(event) {
+    var modals = document.getElementsByClassName('modal');
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gmnuYL6CE41ASBjn8"); // Enclose the public key in quotes
+      })();
+    </script>
+
+
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	
 	
 	<nav class=" #navbar-section navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Lahiruni Malshika<span>.</span></a>
+			<a class="navbar-brand" href="index.html">Lahiruni Malshika</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
@@ -33,8 +76,8 @@
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#service-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
@@ -51,13 +94,18 @@
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Hello! This is Lahiruni</span>
 								<h1 class="mb-4 mt-3">Software <span>Developer</span></h1>
-								<p> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<div class="btn-container">
+									<p> <a href="#contact-section" class="btn btn-primary btn-outline-primary">Hire Me</a></p>
+								</div>
+								  
+
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -73,8 +121,8 @@
 						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">I Develop &amp; Build Brands</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Lahiruni</span> This is my favorite work.</h1>
-								<p> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<h1 class="mb-4 mt-3">Hi, I am  <span>from Sri Lanka</span></h1>
+								<p> <a href="#contact-section" class="btn btn-primary btn-outline-primary">Hire Me</a></p>
 							</div>
 						</div>
 					</div>
@@ -183,11 +231,15 @@
 									</div>
 									<div class="interest-wrap d-flex align-items-center">
 										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-listening"></span>
+											<span class="fa flaticon-listening"></span>
 										</div>
 										<div class="text">Dancing</div>
 									</div>
 								</div>
+							</div>
+							<div class="cv ">
+								<p><a href="lahiruniCV.pdf" download="lahiruniCV.pdf" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+
 							</div>
 						</div>
 					</div>
@@ -196,101 +248,7 @@
 		</div>
 	</section>
 	
-	<!-- <section class="ftco-section bg-light" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Skills</span>
-					<h2 class="mb-4">My Skills</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row progress-circle mb-5">
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
-
-						<div class="progress mx-auto" data-value='95'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
-							</div>
-						</div>
-
-						<div class="row text-center mt-4">
-							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-							</div>
-							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
-
-						<div class="progress mx-auto" data-value='98'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">98<sup class="small">%</sup></div>
-							</div>
-						</div>
-
-						<div class="row text-center mt-4">
-							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-							</div>
-							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">jQuery</h2>
-
-						<div class="progress mx-auto" data-value='68'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
-							</div>
-						</div>
-
-						<div class="row text-center mt-4">
-							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-							</div>
-							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="service-section ftco-section" id="service-section">
+		<section class="service-section ftco-section" id="service-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
@@ -302,44 +260,30 @@
 
 			<div class="row">
 				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-3d-design"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<!-- Modal Structure -->
-
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-app-development"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Application</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
+				  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+					<div class="icon shadow d-flex align-items-center justify-content-center">
+					  <span class="flaticon-web-programming"></span>
+					</div>
+					<div class="media-body">
+					  <h3 class="heading mb-3">Web Development</h3>
+					  <p>A small river named Duden flows by their place and supplies.</p>
+					</div>
+				  </div>
 				</div>
 				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Development</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
+				  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+					<div class="icon shadow d-flex align-items-center justify-content-center">
+					  <span class="fas flaticon-app-development"></span>
+					</div>
+					<div class="media-body">
+					  <h3 class="heading mb-3">Mobile App Development</h3>
+					  <p>A small river named Duden flows by their place and supplies.</p>
+					</div>
+				  </div>
 				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Banner Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
+				<!-- Add more cards as needed -->
+			  </div>
+			  
 
 			<div class="row">
 							</div>
@@ -350,8 +294,7 @@
   <div class="container">
     <div class="row justify-content-center pb-5">
       <div class="col-md-12 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Skills</h1>
-        <h2 class="mb-4">My Skills</h2>
+        <h1 class="mb-4">My Skills</h1>
         <p>
           With a diverse set of skills, I am dedicated to delivering
           high-quality results in every project I undertake. Below is a
@@ -483,7 +426,7 @@
 				<div class="col-md-8 col-lg-8 d-flex align-items-center">
 					<div class="w-100 py-4">
 						<h2>Have a project on your mind.</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
+						<p>Contact me, I will do your project in my best.</p>
 						<p class="mb-0"><a href="#contact-section" class="btn btn-white py-3 px-4">Contact me</a></p>
 					</div>
 				</div>
@@ -494,92 +437,57 @@
 		</div>
 	</section>
 
-	<!-- <section class="project-section ftco-section ftco-project" id="project-section">
+	<section class="ftco-section ftco-project" id="project-section">
 		<div class="container-fluid px-md-4">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Accomplishments</span>
-					<h2 class="mb-4">My Projects</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
+		  <div class="row justify-content-center pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+			  <span class="subheading">Accomplishments</span>
+			  <h2 class="mb-4">My Projects</h2>
+			  <p>Below is my projects which I have been done</p>
 			</div>
-			<div class="row">
-				
-				<div class="col-md-6">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/sp2.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Photography Focused Responsive web application</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-6" id="p1">
+			  <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/sp2.png);" onclick="openModal('modal1')">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="" onclick="event.preventDefault(); openModal('modal1');">Photography Focused Responsive web application</a></h3>
+				  <span class="p1-theme">Web Design</span>
 				</div>
-				<div class="col-md-6">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Multi-Colour Wall Art Machine</a></h3>
-							<span>Hardware Project</span>
-						</div>
-					</div>
-				</div>
-				
-				
-				
+			  </div>
 			</div>
+			<div class="col-md-6">
+			  <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);" onclick="openModal('modal2')">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#" onclick="event.preventDefault(); openModal('modal2');">Multi-Colour Wall Art Machine</a></h3>
+				  <span>Hardware Project</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-	</section> -->
+	  </section>
+	  
+	  <!-- Modals -->
+	  <div id="modal1" class="modal">
+		<div class="modal-content">
+		  <span class="close" onclick="closeModal('modal1')">&times;</span>
+		  <h6>Photography Focused Responsive Web Application</h6>
+		  <p>Welcome to our dynamic platform, a haven where photographers can flourish and connect with potential clients. Here, photographers can effortlessly upload albums, opting for private or public visibility to best suit their needs. They can also market their services through personalized packages, catering to a variety of client requirements. With the ability to manage appointments directly on their profiles, our platform ensures a seamless booking experience. For our users, the journey to discover exceptional talent is just a click away. Explore an extensive collection of portfolios to find your ideal photographer. Book with confidence, knowing you can see real-time availability and secure your session directly through the photographer’s profile. We stand firm in our commitment to inclusivity, welcoming photographers irrespective of their financial status.</p>
+		</div>
+	  </div>
+	  
+	  <div id="modal2" class="modal">
+		<div class="modal-content">
+		  <span class="close" onclick="closeModal('modal2')">&times;</span>
+		  <h6>Multi-Colour Wall Art Machine</h6>
+		  <p>Details about the project...</p>
+		</div>
+	  </div>
+	  
 
-	<section class="project-section ftco-section ftco-project" id="project-section">
-        <div class="container-fluid px-md-4">
-            <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <span class="subheading">Accomplishments</span>
-                    <h2 class="mb-4">My Projects</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6" id="p1">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/sp2.png);" onclick="openModal('modal1')">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="" onclick="event.preventDefault(); openModal('modal1', 'project1');">Photography Focused Responsive web application</a></h3>
-                            <span class="p1-theme">Web Design</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);" onclick="openModal('modal2')">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#"  onclick="event.preventDefault(); openModal('modal2', 'project2');">Multi-Colour Wall Art Machine</a></h3>
-                            <span>Hardware Project</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modals -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h6>Photography Focused Responsive Web Application</h6>
-            <p>Welcome to our dynamic platform, a haven where photographers can flourish and connect with potential clients. Here, photographers can effortlessly upload albums, opting for private or public visibility to best suit their needs. They can also market their services through personalized packages, catering to a variety of client requirements. With the ability to manage appointments directly on their profiles, our platform ensures a seamless booking experience. For our users, the journey to discover exceptional talent is just a click away. Explore an extensive collection of portfolios to find your ideal photographer. Book with confidence, knowing you can see real-time availability and secure your session directly through the photographer’s profile. We stand firm in our commitment to inclusivity, welcoming photographers irrespective of their financial status.</p>
-        </div>
-    </div>
-    
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h6>Multi-Colour Wall Art Machine</h6>
-            <p>Details about the project...</p>
-        </div>
-    </div>
-
-	<section class="ftco-section testimony-section bg-primary">
+	<!-- <section class="ftco-section testimony-section bg-primary">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
@@ -670,7 +578,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<section class="ftco-section bg-light" id="blog-section">
@@ -756,7 +664,7 @@
 								<span class="fa fa-phone"></span>
 							</div>
 							<div class="text">
-								<p><span>Phone:</span> <a href="tel://1234567920">+71 242 8170</a></p>
+								<p><span>Phone:</span> <a href="tel://1234567920">+9471 242 8170</a></p>
 							</div>
 						</div>
 						<div class="dbox w-100 d-flex">
@@ -785,7 +693,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div id="map" class="map"></div> -->
 				</div>
 			</div>
 		</div>
@@ -798,7 +705,7 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Lets talk about</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<p>3rd year IT undergraduate from University of Moratuwa, Sri Lanka. I'm Passionate about Information Technology and innovations.</p>
 						<p><a href="#" class="btn btn-primary">Learn more</a></p>
 					</div>
 				</div>
@@ -818,11 +725,9 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Business Strategy</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Data Analysis</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Graphic Design</a></li>
+							<li><a href="service-section"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
+							<li><a href="service-section"><span class="fa fa-chevron-right mr-2"></span>Mobile App Development </a></li>
+							<li><a href="service-section"><span class="fa fa-chevron-right mr-2"></span>IT Consultant</a></li>
 						</ul>
 					</div>
 				</div>
@@ -863,6 +768,40 @@
 		<script src="js/google-map.js"></script>
 		
 		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			document
+			  .getElementById("contact-form")
+			  .addEventListener("submit", function (event) {
+				event.preventDefault();
+				formData = {
+				  from_name: document.getElementById("name1").value,
+	  
+				  subject: document.getElementById("subject1").value,
+				  message: document.getElementById("message1").value,
+				};
+	  
+				// Send the email using EmailJS
+				emailjs.send("service_fb0tuew", "template_0xeaiau", formData).then(
+				  function (response) {
+					console.log("SUCCESS!", response.status, response.text);
+					Toastify({
+					  text: "Message sent successfully!",
+					  backgroundColor: "linear-gradient(to right, #ffc107, #96c93d)",
+					  className: "success",
+					}).showToast();
+				  },
+				  function (error) {
+					console.log("FAILED...", error);
+					Toastify({
+					  text: "Failed to send the message. Please try again.",
+					  backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
+					  className: "error",
+					}).showToast();
+				  }
+				);
+			  });
+	      </script>
 		
 	</body>
 	</html>
