@@ -9870,6 +9870,17 @@ margin-top: 20px;
 margin-left: 12px;
 }
 
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Optional: adjust the color of the carousel controls */
+}
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
