@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8428,13 +8428,14 @@ h1, h2, h3, h4, h5,
         background: #b3b3b3; }
   .owl-carousel.home-slider {
     position: relative;
-    height: 750px;
+    min-height: 750px;
     z-index: 0; }
+
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      height: 750px;
+      min-height: 750px;
       position: relative;
       z-index: 0; }
       @media (max-width: 1199.98px) {
@@ -8449,7 +8450,7 @@ h1, h2, h3, h4, h5,
         background: #000000;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
-        height: 750px;
+        min-height: 750px;
         z-index: 0; }
         @media (max-width: 991.98px) {
           .owl-carousel.home-slider .slider-item .slider-text {
@@ -8459,9 +8460,12 @@ h1, h2, h3, h4, h5,
           position: relative;
           height: 750px;
           z-index: -1;
-          -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
+          /* -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
           -moz-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
-          box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16); }
+          box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16); */
+          
+          
+         }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay, .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay-1 {
             position: absolute;
             left: -7%;
@@ -8493,8 +8497,9 @@ h1, h2, h3, h4, h5,
               .owl-carousel.home-slider .slider-item .slider-text .one-third:after {
                 opacity: 0; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-          width: 50%;
-          position: relative; }
+          width: 100%;
+          position: relative; 
+        }
           @media (min-width: 768px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
               position: absolute;
@@ -9912,3 +9917,42 @@ margin-left: 12px;
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    #home-section {
+      overflow: auto;
+      position: relative; /* Or ensure proper handling of absolute/fixed positioning */
+      max-height: none; /* Or remove the property if not necessary */
+      height: auto; /* Instead of 100vh; allows content to define height */
+      min-height: 100vh; /* Ensures section is at least as tall as the viewport */
+      overflow-y: auto;
+      z-index: 1;
+    }
+    
+    body,
+    html {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-y: auto; /* Ensure vertical scrolling */
+    }
+    
+    html,
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+#home-section,
+#about-section,
+#services-section,
+#skills-section,
+#projects-section,
+#contact-section {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  
+}
+
+
+#home-section, #section-sec{
+  background-color:#E8E8DE;
+}
