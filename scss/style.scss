@@ -1128,6 +1128,113 @@ h5,
 	margin-top: 10px;
 }
 
+// SKILLS CATEGORIZED
+
+
+// SKILLS
+.skill-category-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $primary;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid lighten($primary, 20%);
+  display: inline-block;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.services-1 {
+  background: $white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+  border: 1px solid #ebebeb;
+  transition: all 0.3s ease;
+
+  .icon-wrapper {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+  }
+
+  .desc h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: lighten($black, 20%);
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $primary;
+    box-shadow: 0 8px 24px rgba(177, 180, 147, 0.3);
+
+    .desc h3 {
+      color: $primary;
+    }
+
+    .icon-wrapper {
+      background: lighten($primary, 25%);
+    }
+  }
+}
+
+
+
+
+.skill-item img {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  object-fit: contain !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
+.skill-item span {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #666 !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.skill-item:hover {
+  transform: translateY(-4px) !important;
+  border-color: $primary !important;
+  box-shadow: 0 6px 20px rgba(177, 180, 147, 0.3) !important;
+}
+
+.skill-item:hover span {
+  color: $primary !important;
+}
+
 //SERVICES
 .services {
 	@include transition(.3s);

@@ -59,13 +59,43 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		#skills-section .skill-grid {
+			display: flex !important;
+			flex-direction: row !important;
+			flex-wrap: wrap !important;
+			gap: 16px !important;
+		}
 
-	<!-- <style>
-    .img {
-      background-size: cover;
-      background-position: center;
-    }
-  </style> -->
+		#skills-section .skill-item {
+			width: 100px !important;
+			height: 100px !important;
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center !important;
+			justify-content: center !important;
+			background: #fff !important;
+			border: 1px solid #e8e8e0 !important;
+			border-radius: 12px !important;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+			padding: 16px 12px !important;
+			float: none !important;
+		}
+
+		#skills-section .skill-item img {
+			width: 40px !important;
+			height: 40px !important;
+			object-fit: contain !important;
+			margin-bottom: 8px !important;
+		}
+
+		#skills-section .skill-item span {
+			font-size: 11px !important;
+			font-weight: 600 !important;
+			color: #666 !important;
+			text-align: center !important;
+		}
+	</style>
 
 </head>
 
@@ -87,7 +117,8 @@
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
 					<li class="nav-item"><a href="#service-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a>
+					</li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -199,9 +230,9 @@
 								</h1>
 								<p>
 									<!-- Have to complete this part-->
-									<a href="#contact-section" class="btn py-3 px-4"
-										style="color: rgb(146, 148, 130); background-color: white;">Contact me</a>
-									<!-- Have to complete this part-->
+									<a href="Lahiruni Malshika SE.pdf" download="Lahiruni Malshika CV.pdf"
+										class="btn py-3 px-4"
+										style="color: rgb(146, 148, 130); background-color: white;">Download CV</a>
 
 								</p>
 							</div>
@@ -407,36 +438,15 @@
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="mb-4">My Skills</h1>
-					<p>
-						With a diverse set of skills, I am dedicated to delivering
-						high-quality results in every project I undertake. Below is a
-						snapshot of my proficiency in various tools and technologies.
-					</p>
+					<h1 class="mb-4">Technical Skills</h1>
+					<p>With a diverse set of skills, I am dedicated to delivering high-quality results in every project
+						I undertake.</p>
 				</div>
 			</div>
-			<div class="skill-container">
-				<div class="col-md-3 text-center d-flex ftco-animate">
-					<div class="services-1">
-						<div class="icon-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
-						</div>
-						<div class="desc">
-							<h3 class="mb-3">React</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 text-center d-flex ftco-animate">
-					<div class="services-1">
-						<div class="icon-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg/640px-Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg.png"
-								alt="Next JS" />
-						</div>
-						<div class="desc">
-							<h3 class="mb-3">Next JS</h3>
-						</div>
-					</div>
-				</div>
+
+			<!-- Programming Languages -->
+			<h3 class="skill-category-title ftco-animate">Programming Languages</h3>
+			<div class="skill-container ftco-animate">
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<div class="services-1">
 						<div class="icon-wrapper">
@@ -462,22 +472,59 @@
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<div class="services-1">
 						<div class="icon-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-								alt="TypeScript" />
+							<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+								alt="C" />
 						</div>
 						<div class="desc">
-							<h3 class="mb-3">Node Js</h3>
+							<h3 class="mb-3">C</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<div class="services-1">
 						<div class="icon-wrapper">
-							<img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
-								alt="Express JS" />
+							<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+								alt="Java" />
 						</div>
 						<div class="desc">
-							<h3 class="mb-3">Express JS</h3>
+							<h3 class="mb-3">Java</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+								alt="Python" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Python</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Web Development -->
+			<h3 class="skill-category-title ftco-animate">Web Development</h3>
+			<div class="skill-container ftco-animate">
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">React</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg/640px-Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg.png"
+								alt="Next JS" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Next JS</h3>
 						</div>
 					</div>
 				</div>
@@ -517,6 +564,28 @@
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<div class="services-1">
 						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+								alt="Node JS" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Node JS</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+								alt="Express JS" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Express JS</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
 							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/640px-NestJS.svg.png"
 								alt="Nest JS" />
 						</div>
@@ -525,7 +594,75 @@
 						</div>
 					</div>
 				</div>
+			</div>
 
+			<!-- Mobile Development -->
+			<h3 class="skill-category-title ftco-animate">Mobile Development</h3>
+			<div class="skill-container ftco-animate">
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+								alt="Flutter" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Flutter</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+								alt="React Native" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">React Native</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- DevOps & Cloud -->
+			<h3 class="skill-category-title ftco-animate">DevOps & Cloud</h3>
+			<div class="skill-container ftco-animate">
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
+								alt="Docker" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Docker</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+								alt="AWS" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">AWS</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<div class="icon-wrapper">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" />
+						</div>
+						<div class="desc">
+							<h3 class="mb-3">Git</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Databases -->
+			<h3 class="skill-category-title ftco-animate">Databases</h3>
+			<div class="skill-container ftco-animate">
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<div class="services-1">
 						<div class="icon-wrapper">
@@ -540,31 +677,8 @@
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<div class="services-1">
 						<div class="icon-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-								alt="C" />
-						</div>
-						<div class="desc">
-							<h3 class="mb-3">C</h3>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3 text-center d-flex ftco-animate">
-					<div class="services-1">
-						<div class="icon-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
-								alt="Java" />
-						</div>
-						<div class="desc">
-							<h3 class="mb-3">Java</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 text-center d-flex ftco-animate">
-					<div class="services-1">
-						<div class="icon-wrapper">
 							<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
-								alt="Java" />
+								alt="MongoDB" />
 						</div>
 						<div class="desc">
 							<h3 class="mb-3">MongoDB</h3>
@@ -572,6 +686,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 
