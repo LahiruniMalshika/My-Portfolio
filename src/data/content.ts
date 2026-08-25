@@ -127,10 +127,8 @@ export const projects: Project[] = [
     title: "Anothershots — Photography Focused Web Application",
     category: "Web Development",
     role: "Full Stack Developer",
-    description:
-      "An inclusive platform connecting photography professionals with clients. Photographers can upload albums with private or public visibility, market personalized packages, and manage bookings directly on their profile with real-time availability. I implemented the Featured Photo, Contact, and Packages sections of the photographer profile, plus the Booking flow and Admin Dashboard, applying clean architecture and design patterns.",
+    description:"Welcome to our dynamic platform, a haven where photographers can flourish and connect with potential clients. Here, photographers can effortlessly upload albums, opting for private or public visibility to best suit their needs. They can also market their services through personalized packages, catering to a variety of client requirements. With the ability to manage appointments directly on their profiles, our platform ensures a seamless booking experience. For our users, the journey to discover exceptional talent is just a click away. Explore an extensive collection of portfolios to find your ideal photographer. Book with confidence, knowing you can see real-time availability and secure your session directly through the photographer’s profile. We stand firm in our commitment to inclusivity, welcoming photographers irrespective of their financial status. I implemented the Featured Photo, Contact, and Packages sections of the photographer profile, plus the Booking flow and Admin Dashboard, applying clean architecture and design patterns.",
     techStack: ["Next JS", "TypeScript", "Tailwind CSS", "Nest JS", "Prisma ORM", "MongoDB"],
-    liveUrl: "https://anothershots.com/",
     githubUrls: [
       { label: "Frontend Repository", url: "https://github.com/NerdLabs-UoM/anothershot-frontend" },
       { label: "Backend Repository", url: "https://github.com/NerdLabs-UoM/anothershot-backend" },
@@ -143,28 +141,31 @@ export const projects: Project[] = [
     title: "Multi-Colour Wall Art Machine",
     category: "Hardware Project",
     description:
-      "A machine that turns a digital image into physical wall art at 1m × 1m scale by spraying ink through nozzles mounted on a 2-axis stepper-motor gantry, driven by a height/width input from a computer. Built with a talented team, it can also be adapted for fabric art and posters.",
+      "With great delight, I, as a member of this exceptional team, along with my talented other group members Mr.Supun Jayathilaka, Mr.Mohomed Arkam, Mr.Dilshan Lakshitha, and Miss.Chamodi Liyanage, take immense pride in leading this groundbreaking project. Life is not all about working, earning, and studying. Life is meant to be beautiful. As human beings, we need a balanced life between career, family, friends, and other social events. To maintain a balanced lifestyle we need to have some art side in our lives. According to studies lot of mental problems can be reduced by art and entertainment Wall art is something more important than photo albums or standing frames. As human beings, we are intimately connected to the art. In modern society, all are engaged with technology. So, depression, stress, and many other problems are increasing. Art can balance our lives by giving us pleasure, also it can be a mood fixer. Whether we have a stash of original art or photo albums, you have to eventually go and look for them. Making your precious photographs into wall art is the best way to get your art visible in your home or office or wherever you want. Wall art is the new revolution in the world of printing technology. Printing is no longer limited to a small surface. The designed wall art system can make your precious images into wall art in 1m * 1m diamensions. So people will no longer need to spend their money on each and every image that they think good for wall art. This developed system can make lives colorful and fun. The designed system can create the image on the wall using different colors. We have developed this system that will create the image on a wall that will be input through a computer. The height and width are should enter and the art or design is painted in the wall by spraying the ink by nozzles. The machine runs on 2 tracks powered by 2 stepper motors. This machine can used for fabric art and posters also. So we are willing to develop this machine to make it smoother to make more complex artwork.",
     techStack: ["Embedded Systems", "Stepper Motors", "Image Processing"],
     cover: "wall-art-1",
     gallery: ["wall-art-1", "wall-art-2", "wall-art-3"],
   },
-  {
-    slug: "my-portfolio",
-    title: "This Portfolio",
-    category: "Personal Project",
-    description:
-      "My personal portfolio, redesigned as a fast, accessible, dark/light-aware single-page site built with React and TypeScript — the very site you're looking at now.",
-    techStack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    liveUrl: "https://lahirunimalshika-portfolio.vercel.app",
-    cover: "portfolio-ss",
-  },
+  // {
+  //   slug: "my-portfolio",
+  //   title: "This Portfolio",
+  //   category: "Personal Project",
+  //   description:
+  //     "My personal portfolio, redesigned as a fast, accessible, dark/light-aware single-page site built with React and TypeScript — the very site you're looking at now.",
+  //   techStack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+  //   liveUrl: "https://lahirunimalshika-portfolio.vercel.app",
+  //   cover: "portfolio-ss",
+  // },
   {
     slug: "image-search",
     title: "Image Search Application",
     category: "Web Application",
     description:
-      "A fast image search tool that queries and displays results with pagination, filtering, and a clean responsive grid layout.",
-    techStack: ["JavaScript", "REST APIs"],
+      "I developed a streamlined image-search application that enables users to search for images by entering relevant keywords. The application leverages a user-friendly interface where users can input text-based queries, and the system retrieves and displays corresponding images.",
+    techStack: ["React JS", "Tailwind CSS", "Unsplash API"],
+    githubUrls: [
+      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/Image-Search-Engine" },
+    ],
     liveUrl: "https://image-search-eapp.vercel.app/",
     cover: "image-search",
   },
@@ -175,6 +176,8 @@ export const projects: Project[] = [
     description:
       "A cycle-accurate hardware-software co-design simulator for systolic-array DNN accelerators, built to address performance bottlenecks in DNN execution — a SystemVerilog RTL model paired with a Python compiler/mapper for memory management.",
     techStack: ["Python", "Verilog", "DNN Workloads", "FPGA Simulation"],
+    cover: "FYP-poster",
+    gallery: ["FYP-poster"],
   },
   {
     slug: "mozzamelt",
@@ -200,6 +203,19 @@ export const projects: Project[] = [
     description:
       "A rule-based expert system recommending travel destinations via logical inference, with a Prolog knowledge base blended into a Python GUI — including best-season prediction and cheapest-destination finding.",
     techStack: ["Python", "Prolog (SWI-Prolog)", "Tkinter"],
+  },
+  {
+    slug: "studyBuddy",
+    title: "StudyBuddy - Online Book Platform",
+    category: "Web Development",
+    role: "Full Stack Developer",
+    description:"This mobile application provides a seamless platform for users to check the availability of books online. The app allows users to quickly sign up or sign in to access the home page, where they can explore books.",
+    techStack: ["React Native", "TypeScript"],
+    githubUrls: [
+      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/StudyBuddy" },
+    ],
+    cover: "",
+    gallery: [""],
   },
 ];
 
