@@ -26,7 +26,7 @@ export const education = [
       "Dean's List: Level 2 Semester 1 — SGPA 3.89",
       "Dean's List: Level 2 Semester 2 — SGPA 3.94",
       "Dean's List: Level 4 Semester 1 — SGPA 3.85",
-      "CGPA 3.48 / 4.0 (up to L4S1)",
+      "CGPA 3.51 / 4.0",
     ],
   },
 ];
@@ -123,11 +123,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "final-year-research",
+    title: "Hardware-Software Co-design of Spatial DL Hardware Accelerators",
+    category: "Final Year Research · Group Project",
+    description:
+      "A cycle-accurate hardware-software co-design simulator for systolic-array DNN accelerators, built to address performance bottlenecks in DNN execution — a SystemVerilog RTL model paired with a Python compiler/mapper for memory management.",
+    techStack: ["Python", "Verilog", "DNN Workloads", "FPGA Simulation"],
+    cover: "FYP-poster",
+    gallery: ["FYP-poster"],
+    githubUrls: [
+      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/Quadramind_DNN_Accelerator" },
+    ],
+  },
+  {
     slug: "anothershots",
     title: "Anothershots — Photography Focused Web Application",
     category: "Web Development",
     role: "Full Stack Developer",
-    description:"Welcome to our dynamic platform, a haven where photographers can flourish and connect with potential clients. Here, photographers can effortlessly upload albums, opting for private or public visibility to best suit their needs. They can also market their services through personalized packages, catering to a variety of client requirements. With the ability to manage appointments directly on their profiles, our platform ensures a seamless booking experience. For our users, the journey to discover exceptional talent is just a click away. Explore an extensive collection of portfolios to find your ideal photographer. Book with confidence, knowing you can see real-time availability and secure your session directly through the photographer’s profile. We stand firm in our commitment to inclusivity, welcoming photographers irrespective of their financial status. I implemented the Featured Photo, Contact, and Packages sections of the photographer profile, plus the Booking flow and Admin Dashboard, applying clean architecture and design patterns.",
+    description: "Welcome to our dynamic platform, a haven where photographers can flourish and connect with potential clients. Here, photographers can effortlessly upload albums, opting for private or public visibility to best suit their needs. They can also market their services through personalized packages, catering to a variety of client requirements. With the ability to manage appointments directly on their profiles, our platform ensures a seamless booking experience. For our users, the journey to discover exceptional talent is just a click away. Explore an extensive collection of portfolios to find your ideal photographer. Book with confidence, knowing you can see real-time availability and secure your session directly through the photographer’s profile. We stand firm in our commitment to inclusivity, welcoming photographers irrespective of their financial status. I implemented the Featured Photo, Contact, and Packages sections of the photographer profile, plus the Booking flow and Admin Dashboard, applying clean architecture and design patterns.",
     techStack: ["Next JS", "TypeScript", "Tailwind CSS", "Nest JS", "Prisma ORM", "MongoDB"],
     githubUrls: [
       { label: "Frontend Repository", url: "https://github.com/NerdLabs-UoM/anothershot-frontend" },
@@ -135,6 +148,21 @@ export const projects: Project[] = [
     ],
     cover: "anothershots-1",
     gallery: ["anothershots-1", "anothershots-2", "anothershots-3", "anothershots-4", "anothershots-5", "anothershots-6", "anothershots-7"],
+  },
+  {
+    slug: "mozzamelt",
+    title: "MozzaMelt — Ecommerce Platform",
+    category: "Group Project",
+    role: "Frontend Developer, Software QA Engineer",
+    description:
+      "A web application for a pizza shop supporting ordering, payments, order tracking, profile management, and reviews. Contributed to front-end development and quality assurance, including the CI/CD pipeline and automated testing.",
+    techStack: ["React JS", "ASP.NET Core", "MS SQL", "Docker", "CI/CD", "Selenium"],
+    cover: "mozzamelt",
+    gallery: ["mozzamelt", "mozzamelt-2"],
+    githubUrls: [
+      { label: "Frontend Repository", url: "https://github.com/LahiruniMalshika/EcommerceSystemFrontend" },
+      { label: "Backend Repository", url: "https://github.com/LahiruniMalshika/EcommerceSystemBackend" },
+    ],
   },
   {
     slug: "wall-art-machine",
@@ -146,48 +174,6 @@ export const projects: Project[] = [
     cover: "wall-art-1",
     gallery: ["wall-art-1", "wall-art-2", "wall-art-3"],
   },
-  // {
-  //   slug: "my-portfolio",
-  //   title: "This Portfolio",
-  //   category: "Personal Project",
-  //   description:
-  //     "My personal portfolio, redesigned as a fast, accessible, dark/light-aware single-page site built with React and TypeScript — the very site you're looking at now.",
-  //   techStack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-  //   liveUrl: "https://lahirunimalshika-portfolio.vercel.app",
-  //   cover: "portfolio-ss",
-  // },
-  {
-    slug: "image-search",
-    title: "Image Search Application",
-    category: "Web Application",
-    description:
-      "I developed a streamlined image-search application that enables users to search for images by entering relevant keywords. The application leverages a user-friendly interface where users can input text-based queries, and the system retrieves and displays corresponding images.",
-    techStack: ["React JS", "Tailwind CSS", "Unsplash API"],
-    githubUrls: [
-      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/Image-Search-Engine" },
-    ],
-    liveUrl: "https://image-search-eapp.vercel.app/",
-    cover: "image-search",
-  },
-  {
-    slug: "final-year-research",
-    title: "Hardware-Software Co-design of Spatial DL Hardware Accelerators",
-    category: "Final Year Research · Group Project",
-    description:
-      "A cycle-accurate hardware-software co-design simulator for systolic-array DNN accelerators, built to address performance bottlenecks in DNN execution — a SystemVerilog RTL model paired with a Python compiler/mapper for memory management.",
-    techStack: ["Python", "Verilog", "DNN Workloads", "FPGA Simulation"],
-    cover: "FYP-poster",
-    gallery: ["FYP-poster"],
-  },
-  {
-    slug: "mozzamelt",
-    title: "MozzaMelt — Ecommerce Platform",
-    category: "Group Project",
-    role: "Frontend Developer, Software QA Engineer",
-    description:
-      "A web application for a pizza shop supporting ordering, payments, order tracking, profile management, and reviews. Contributed to front-end development and quality assurance, including the CI/CD pipeline and automated testing.",
-    techStack: ["React JS", "ASP.NET Core", "MS SQL", "Docker", "CI/CD", "Selenium"],
-  },
   {
     slug: "fuel-price-prediction",
     title: "Fuel Price Prediction Dashboard",
@@ -195,27 +181,52 @@ export const projects: Project[] = [
     description:
       "A machine learning model predicting commonly used fuel prices in Sri Lanka, covering data preprocessing, feature engineering, and classification.",
     techStack: ["Python", "Pandas", "Scikit-learn"],
+    githubUrls: [
+      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/FuelPricePredictionDashboard_MLModel" },
+    ],
+    cover: "fuel-prediction-02",
+    gallery: ["fuel-prediction-01", "fuel-prediction-02", "fuel-prediction-03", "fuel-prediction-04"],
+
   },
   {
     slug: "travel-recommendation-expert-system",
     title: "Travel Recommendation Expert System",
     category: "Individual Project",
     description:
-      "A rule-based expert system recommending travel destinations via logical inference, with a Prolog knowledge base blended into a Python GUI — including best-season prediction and cheapest-destination finding.",
+      "Designed and implemented a rule-based expert system that mimics human travel planning expertise using logical reasoning and inference. Developed a Prolog knowledge base containing destination facts and rules, and integrated it with a Python GUI (Tkinter + PySWIP) to create an interactive application. Features include: Intelligent destination recommendation,Best season prediction, Cheapest destination finder by continent, Rule-based decision support. This project demonstrates skills in Artificial Intelligence, Knowledge Representation, Expert Systems, Logic Programming, and Full-stack Integration.",
     techStack: ["Python", "Prolog (SWI-Prolog)", "Tkinter"],
+    cover: "travel-recommendation",
+    gallery: ["travel-recommendation"],
+    githubUrls: [
+      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/ExpertSystem-TravelAdvisor" },
+    ],
   },
   {
     slug: "studyBuddy",
     title: "StudyBuddy - Online Book Platform",
     category: "Web Development",
     role: "Full Stack Developer",
-    description:"This mobile application provides a seamless platform for users to check the availability of books online. The app allows users to quickly sign up or sign in to access the home page, where they can explore books.",
+    description: "This mobile application provides a seamless platform for users to check the availability of books online. The app allows users to quickly sign up or sign in to access the home page, where they can explore books.",
     techStack: ["React Native", "TypeScript"],
     githubUrls: [
       { label: "Github Repository", url: "https://github.com/LahiruniMalshika/StudyBuddy" },
     ],
-    cover: "",
-    gallery: [""],
+    cover: "studyBuddy-signIn",
+    gallery: ["studyBuddy-signIn", "studyBuddy-signUp", "studyBuddy-home"],
+  },
+  {
+    slug: "image-search",
+    title: "Image Search Application",
+    category: "Web Application",
+    description:
+      "I developed a streamlined image-search application that enables users to search for images by entering relevant keywords. The application leverages a user-friendly interface where users can input text-based queries, and the system retrieves and displays corresponding images.",
+    techStack: ["React JS", "Tailwind CSS", "Unsplash API"],
+    cover: "image-search",
+    gallery: ["image-search"],
+    githubUrls: [
+      { label: "Github Repository", url: "https://github.com/LahiruniMalshika/Image-Search-Engine" },
+    ],
+    liveUrl: "https://image-search-eapp.vercel.app/",
   },
 ];
 

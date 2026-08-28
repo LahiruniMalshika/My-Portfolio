@@ -51,12 +51,12 @@ export function ProjectModal({ project, onClose }: { project: Project; onClose: 
         </div>
 
         {gallery.length > 0 && (
-          <div className="relative mb-6 overflow-hidden rounded-xl border border-border">
+          <div className="relative mb-6 flex max-h-[60vh] items-center justify-center overflow-hidden rounded-xl border border-border bg-bg-alt">
             <img
               src={images[gallery[slide] as keyof typeof images]}
               alt={`${project.title} screenshot ${slide + 1}`}
               loading="lazy"
-              className="aspect-video w-full object-cover"
+              className="max-h-[60vh] w-full object-contain"
             />
             {gallery.length > 1 && (
               <>

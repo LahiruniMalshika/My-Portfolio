@@ -16,14 +16,14 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: () => void
       className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-bg-alt text-left transition-all hover:-translate-y-1 hover:border-accent hover:shadow-lg hover:shadow-accent/10"
     >
       {cover ? (
-        <div className="aspect-video overflow-hidden">
+        <div className="aspect-video overflow-hidden bg-bg">
           <img
             src={images[cover]}
             alt={project.title}
             loading="lazy"
             width={1200}
             height={675}
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       ) : (
