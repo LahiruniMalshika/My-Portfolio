@@ -26,7 +26,8 @@ export const education = [
       "Dean's List: Level 2 Semester 1 — SGPA 3.89",
       "Dean's List: Level 2 Semester 2 — SGPA 3.94",
       "Dean's List: Level 4 Semester 1 — SGPA 3.85",
-      "CGPA 3.51 / 4.0",
+      "Dean's List: Level 4 Semester 2 — SGPA 3.88",
+      "CGPA 3.53 / 4.0",
     ],
   },
 ];
