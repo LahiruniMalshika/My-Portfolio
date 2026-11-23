@@ -41,7 +41,7 @@ export function Hero() {
               download
               className="inline-flex items-center gap-2 rounded-xl border border-border px-6 py-3 text-sm font-semibold text-fg transition-all hover:-translate-y-0.5 hover:border-accent hover:text-accent"
             >
-              <Download size={15} />
+              <Download size={16} />
               Download CV
             </a>
           </div>
